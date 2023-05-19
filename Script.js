@@ -154,7 +154,7 @@ app.put("/admin/:id", (req, res) => {
         })
 })
 
-// car
+// cars
 app.get("/car", (req, res) => {
     pool.query("SELECT * FROM car", (err, result) => {
         if (!err) {
